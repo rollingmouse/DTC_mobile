@@ -20,8 +20,9 @@ body{position:relative;font-family:"nbg", "sans-serif", "AppleGothic", "굴림",
 /* 웹진목록 */
 .WZ_list{width:670px;height:780px;background:url('../img/bg_WZ_list.png') no-repeat;padding:0 0 0 80px;}
 .WZ_list li{float:left;width:150px;height:190px;background:url('../img/box_WZ_list.png') no-repeat;margin:10px 28px 50px 0;}
-.WZ_list .list_box{width:110px;height:160px;margin:16px 0 0 23px;position:relative;overflow:hidden;cursor:pointer;}
-.list_box .thumb{width:110px;height:160px;overflow:hidden;position:absolute;left:0;top:0;z-index:1;}
+.WZ_list .list_box{width:110px;height:160px;margin:16px 0 0 23px;position:relative;}
+.list_box .special{width:24px;height:56px;overflow:hidden;position:absolute;left:116px;top:20px;z-index:3;background:url('../img/ico_special.png') no-repeat;font-size:0;line-height:0;text-indent:-999em;}
+.list_box .thumb{width:110px;height:160px;overflow:hidden;position:relative;z-index:1;cursor:pointer;}
 .list_box .ttl{width:110px;height:60px;background-color:rgba(0,0,0,0.6);color:#ffffff;font-size:14px;position:absolute;left:0;top:0;z-index:2;text-align:center;padding:10px;line-height:18px;}
 .list_box .caption{background-color:rgba(0,0,0,0.6);position:absolute;color:#fff;z-index:100;-webkit-transition:all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;-ms-transition: all 300ms ease-out;transition:all 300ms ease-out;left:0;}
 .list_box .simple-caption{height:100px;width:110px;display:block;bottom:-100px;text-align:center;}
