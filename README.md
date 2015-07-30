@@ -4,6 +4,7 @@
 1. '/html/submain_rent.html' - html 수정
 2. '/css/style.css' - css수정
 3. '/css/config.css' - css수정
+4. '/img/ioc_clip.png' - 이미지 추가
 
 ##[2015.07.30] 시설안내 > 섬유박물관 수정
 1. '/html/museum.html' - html 수정
