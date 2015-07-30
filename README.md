@@ -1,5 +1,8 @@
 # DTC
 
+##[2015.07.309] DTC소개 > CI소개 수정
+1. '/html/ci.html' - html 수정
+
 ##[2015.07.29] 시설안내 > 다목적홀/세미나실 수정
 1. '/html/mhsr.html' - html 수정
 2. '/css/style.css' - css수정
