@@ -1,5 +1,10 @@
 # DTC
 
+##[2015.07.30] 대관안내(대관공지사항) 수정
+1. '/html/submain_rent.html' - html 수정
+2. '/css/style.css' - css수정
+3. '/css/config.css' - css수정
+
 ##[2015.07.30] 시설안내 > 섬유박물관 수정
 1. '/html/museum.html' - html 수정
 2. '/css/style.css' - css수정
