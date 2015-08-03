@@ -3,6 +3,7 @@
 ##[2015.08.03] 시설안내 > 비즈니스센터(Textile Library영역) 수정
 1. '/html/biz_center.html' - html 수정
 2. '/css/style.css' - css수정
+3. '/css/magnific-popup.css' - css추가
 3. '/js/jquery.magnific-popup.js' - js추가
 4. '/img/bg_biz_center_4.png' - 이미지 추가
 5. '/img/library/' - 폴더 이미지 추가
