@@ -1,5 +1,10 @@
 # DTC
 
+##[2015.08.09] 시설안내 > 판매 및 근린생활시설 수정
+1. '/html/lift.html' - html 수정
+2. '/img/floor_B1.png floor_1F.png floor_2F.png floor_9F.png' - 이미지 추가
+
+
 ##[2015.08.09] 비즈니스센터 > 입주기업소개 추가
 1. '/html/movein_list.html' - html 추가(비즈니스센터 마지막메뉴로 추가)
 2. '/css/style.css' - css수정
