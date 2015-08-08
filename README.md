@@ -1,5 +1,13 @@
 # DTC
 
+##[2015.08.09] 비즈니스센터 > 입주기업소개 추가
+1. '/html/movein_list.html' - html 추가(비즈니스센터 마지막메뉴로 추가)
+2. '/css/style.css' - css수정
+3. '/css/config.css' - css수정
+4. '/img/floor_3F.png ~ floor_8F.png' - 이미지 추가
+5. '/img/bu_line.png' - 이미지 추가
+6. '/js/util.js' - js수정
+
 ##[2015.08.03] 시설안내 > 비즈니스센터(Textile Library영역) 수정
 1. '/html/biz_center.html' - html 수정
 2. '/css/style.css' - css수정
