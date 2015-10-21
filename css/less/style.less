@@ -128,7 +128,7 @@ select{width:100%;.bdrA;height:40px;padding:0 10px;.f15;color:@gray-t1;}
 }
 
 /* 찾아오시는 길 */
-.map{.pB50;}
+.map{.pB20;}
 .map .sub_map{width:100%;.bdrT;.bdrB;.mB20;
     #sub_dmap{width:100%;height:500px;}
 }
@@ -149,7 +149,7 @@ select{width:100%;.bdrA;height:40px;padding:0 10px;.f15;color:@gray-t1;}
 }
 
 /* 주차안내 */
-.parking{.pB50;.taC;
+.parking{padding:20px 0;.taC;
     .t1{width:100%;.taC;.f24;color:@gray-1;.mB50;.lh30;}
     .t2{width:100%;.taL;.f13;color:@gray-1;.mB10;.lh19;color:@gray-t1;}
     h3{color:@pri-color;.f24;padding:30px 0 20px 0;.lh30;.taL;}
@@ -175,6 +175,28 @@ select{width:100%;.bdrA;height:40px;padding:0 10px;.f15;color:@gray-t1;}
     strong{.oswaldM;color:@pri-color;.vaM;.f24;}
 }
 
+/* 조직도 */
+.organ{padding:20px 0;.taC;
+    .tbl_type_1{min-width:450px;}
+}
+.organ_img{width:100%;.taC;.mB50;
+    img{width:100%;height:auto;max-width:1051px;}
+    p{.hidden;}
+}
+.contact_tel{width:100%;.m0auto;.mB20;
+    li{.dpinblock;.mB10;}
+    li:first-child{.mR20;}
+    strong{.dpinblock;.bgnavy;color:@white;.f15;padding:10px 15px;.mR15;.radius(5px);.vaM;}
+    span{color:@pri-color;.oswaldM;.f30;.vaM;}
+}
+
+@media (max-width:400px) {
+    .contact_tel{
+        li:first-child{.mR00;}
+        strong{.f13;}
+        span{.f21;}
+    }
+}
 
 
 
