@@ -7,10 +7,6 @@
 4. '/html/greet.html' - DTC소개>인사말
 
 ##[img추가]
-1. '/img/marker_dtc.png' 
-2. '/img/parking.png'
-3. '/img/organ.png'
-4. '/img/greet.png'
-5. '/img/greet_ci.png'
+별도로 압축해서 이메일로 발송
 
 
