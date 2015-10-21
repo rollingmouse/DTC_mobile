@@ -1,82 +1,17 @@
-// modal
-$( '#show-modal' ).on( 'click', function( ev ) {
-  $( '#modal' ).fadeIn();
-  $( '#modal-background' ).fadeTo( 500, .5 );
-  ev.preventDefault();
-});
+//gnb
+var arrow = '<span class="arrowspan"></span>'
+$(arrow).insertBefore('.menu-lvl2');
 
-// Function to hide modal
-$( '#close-modal' ).on( 'click', function( ev ) {
-  $( '#modal, #modal-background' ).fadeOut();
-  ev.preventDefault();
+$('.menu-lvl1 .arrowspan').click(function(){
+  if( $(this).next('.menu-lvl2').hasClass('deployed') ){
+    $(this).removeClass('up-arrow');
+    $(this).next('.menu-lvl2').slideUp('fast').removeClass('deployed');
+  }else{
+     $(this).addClass('up-arrow');
+     $(this).next('.menu-lvl2').slideDown('fast').addClass('deployed');
+  }
+  
 });
-
-// 지도자세히보기1
-$( '#show-car1' ).on( 'click', function( ev ) {
-  $( '#pop-car1' ).fadeIn();
-  $( '#car-background' ).fadeTo( 500, .5 );
-  ev.preventDefault();
-});
-$( '#close-car1' ).on( 'click', function( ev ) {
-  $( '#pop-car1, #car-background' ).fadeOut();
-  ev.preventDefault();
-});
-
-// 지도자세히보기2
-$( '#show-car2' ).on( 'click', function( ev ) {
-  $( '#pop-car2' ).fadeIn();
-  $( '#modal-background' ).fadeTo( 500, .5 );
-  ev.preventDefault();
-});
-$( '#close-car2' ).on( 'click', function( ev ) {
-  $( '#pop-car2, #modal-background' ).fadeOut();
-  ev.preventDefault();
-});
-
-//faq형 게시판 폴딩
-var boardSpread = function(id, speed){
-	var $obj = $(id),
-	$speed = 400;
-	$speed = speed;
-	$obj.find("li").on("click","> .head > .subj > a, > .head > .arrow",function(){
-		if($(this).parents("li").hasClass("open")){
-			$(this).parents("li").removeClass("open").find(".content").slideUp($speed,function(){
-				
-			});
-		}else{
-			$obj.find("li.open").find(".content").slideUp($speed,function(){$(this).parents("li").removeClass("open")});
-			$(this).parents("li").addClass("open").find(".content").slideDown($speed,function(){
-				
-			});
-		}
-		return false;
-	});
-}
-
-/*
- * elementToggle(오브젝트, 여닫기, 모션여부, 스피드)
- * elementToggle(오브젝트, 여닫기)
- */
-var elementToggle = function(target, option, motion, speed){
-	var $obj = target,
-	$motion = false,
-	$speed = 300;
-	$motion = motion;
-	$speed = speed;
-	if(!$motion){
-		if(option == 0){
-			$obj.hide();
-		}else if(option == 1){
-			$obj.show();	
-		}
-	}else{
-		if(option == 0){
-			$obj.slideUp(speed);
-		}else if(option == 1){
-			$obj.slideDown(speed)	;
-		}
-	}
-};
 
 // tab 메뉴
 jQuery(function($){  
@@ -104,38 +39,22 @@ jQuery(function($){
   });
 });
 
-// share
-function shareTwitter(title,paramURL){
-	var localValURL = location.href;
-	if(paramURL != null){
-		localValURL = paramURL;
-	}
-	var str = encodeURI(title) + " - " + localValURL;
-	window.open("http://twitter.com/home?status=" + str);
+//faq형 게시판 폴딩
+var boardSpread = function(id, speed){
+	var $obj = $(id),
+	$speed = 400;
+	$speed = speed;
+	$obj.find("li").on("click","> .head > .subj > a, > .head > .arrow",function(){
+		if($(this).parents("li").hasClass("open")){
+			$(this).parents("li").removeClass("open").find(".content").slideUp($speed,function(){
+				
+			});
+		}else{
+			$obj.find("li.open").find(".content").slideUp($speed,function(){$(this).parents("li").removeClass("open")});
+			$(this).parents("li").addClass("open").find(".content").slideDown($speed,function(){
+				
+			});
+		}
+		return false;
+	});
 }
-function shareFacebook(title,paramURL){
-	var localValURL = location.href;
-	if(paramURL != null){
-		localValURL = paramURL;
-	}
-
-	console.log(localValURL);
-	var str = 'http://www.facebook.com/sharer.php?u='+localValURL+'&t='+encodeURI(title);
-	window.open(str);
-}
-function copyURL(paramURL){
-	var localValURL = location.href;
-	if(paramURL != null){
-		localValURL = paramURL;
-	}
-
-    var IE=(document.all)?true:false;
-    if (IE) {
-         window.clipboardData.setData("Text", localValURL);
-         alert("클립보드에 복사되었습니다.");
-    } else {
-         temp = prompt("Ctrl+C를 눌러 클립보드로 복사하세요", localValURL);
-    }
-}
-
-
