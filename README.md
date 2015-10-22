@@ -8,6 +8,7 @@
 5. '/html/support_biz.html' - 지원업무>기업지원
 6. '/html/support_info.html' - 지원업무>섬유·패션·디자인 정보지원
 7. '/html/support_event.html' - 지원업무>행사지원
+8. '/html/museum.html' - 섬유박물관
 
 ##[css] - 나중에 한꺼번에 compile해서 업로드 예정
 1. config.less
