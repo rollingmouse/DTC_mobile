@@ -11,7 +11,7 @@
 8. '/html/museum.html' - 섬유박물관
 
 ##[css]
-1. style.less
+1. style.css
 
 ##[img추가]
 별도로 압축해서 이메일로 발송
