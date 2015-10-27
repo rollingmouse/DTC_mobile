@@ -1,19 +1,13 @@
 # DTC_mobile
 
 ##[html]
-1. '/html/map.html' - DTC소개>찾아오시는 길
-2. '/html/parking.html' - DTC소개>주차안내
-3. '/html/organ.html' - DTC소개>조직 및 업무
-4. '/html/greet.html' - DTC소개>인사말
-5. '/html/support_biz.html' - 지원업무>기업지원
-6. '/html/support_info.html' - 지원업무>섬유·패션·디자인 정보지원
-7. '/html/support_event.html' - 지원업무>행사지원
-8. '/html/museum.html' - 섬유박물관
+1. '/html/rent_guide.html' -대관안내>대관안내
+2. '/html/rent_view.html' -대관안내>대관안내(대관 공지사항보기)
 
 ##[css]
 1. style.css
 
 ##[img추가]
-별도로 압축해서 이메일로 발송
+별도 이메일로 발송
 
 
