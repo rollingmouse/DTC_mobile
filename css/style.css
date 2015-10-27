@@ -13,6 +13,9 @@
 .bgyellow {
   background-color: #ed9226;
 }
+.bglg {
+  background-color: #f4f4f4;
+}
 .bgpink {
   background-color: #d11a6a;
 }
@@ -604,6 +607,9 @@
 .pL07 {
   padding-left: 7px;
 }
+.pL10 {
+  padding-left: 7px;
+}
 .pL15 {
   padding-left: 15px;
 }
@@ -632,14 +638,20 @@
 ul.dot_pink > li {
   background: url("/img/bu_dot_pink.png") no-repeat left 7px;
   padding-left: 7px;
-  line-height: 17px;
+  line-height: 19px;
   background-size: 2px 2px;
 }
 ul.dot_black > li {
   background: url("/img/bu_dot_black.png") no-repeat left 7px;
   padding-left: 7px;
-  line-height: 17px;
+  line-height: 19px;
   background-size: 2px 2px;
+}
+ul.dot_line > li {
+  background: url("/img/bu_line.png") no-repeat left 7px;
+  padding-left: 7px;
+  line-height: 19px;
+  background-size: 4px 1px;
 }
 /* 공지사항 > 검색 */
 .srh_w {
@@ -1837,4 +1849,699 @@ select {
     display: inline-block;
     text-align: center;
   }
+}
+/* 대관안내>다목적홀,세미나실,기획전시실*/
+.rent h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+.rent_li li {
+  color: #7f7f7f;
+  margin-bottom: 5px;
+}
+.rent_li li strong {
+  display: inline-block;
+  width: 110px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  color: #292a2f;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.rent .tbl_type_1 {
+  min-width: 500px;
+}
+/* 비즈니스센터>입주기업소개*/
+.bc_company {
+  padding: 20px 0;
+}
+.bc_company h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  margin-bottom: 15px;
+}
+.bc_company .com_box {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.bc_company .com_box h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bc_company .com_box ul > li {
+  margin-bottom: 5px;
+  color: #000000;
+}
+.bc_company .com_box ul > li > ul {
+  margin-top: 5px;
+}
+.bc_company .com_box ul > li > ul > li {
+  color: #7f7f7f;
+}
+.tabs-content {
+  z-index: 2;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.tabs-content {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tabs-content::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  display: block;
+  *zoom: 1;
+}
+.tabs-menu > ul {
+  margin-bottom: 30px;
+}
+.tabs-menu > ul::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  display: block;
+  *zoom: 1;
+}
+.tabs-menu > ul > li {
+  float: left;
+}
+.tabs-menu > ul > li > a {
+  display: block;
+  color: #666;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-decoration: none;
+}
+.tabs-menu > ul > li > a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tabs-menu > ul > li > a:hover {
+  background-color: #313131;
+  color: #ffffff;
+  text-decoration: none;
+}
+.tabs-menu > ul > li > a.active-tab-menu {
+  background-color: #d11a6a;
+  border: 1px solid #d11a6a;
+  color: #ffffff;
+}
+.tabs-t1 > ul > li {
+  margin-right: 10px;
+}
+.tabs {
+  display: none;
+}
+.tabs-content .first-tab {
+  display: block;
+}
+@media (min-width: 700px) {
+  .tabs-menu > ul > li > a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    font-size: 17px;
+  }
+  .tabs-t1 > ul > li {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 400px) and (max-width: 699px) {
+  .tabs-menu > ul > li > a {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+  }
+  .tabs-t1 > ul > li {
+    margin-right: 2px;
+  }
+}
+@media (max-width: 399px) {
+  .tabs-menu > ul > li > a {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+  }
+  .tabs-t1 > ul > li {
+    margin-right: -1px;
+  }
+}
+@media (max-width: 599px) {
+  .tabs-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* 비즈니스센터>판매 및 근린생활시설*/
+.bc_life {
+  padding: 20px 0;
+}
+.bc_life h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  margin-bottom: 15px;
+}
+.bc_life h4 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.bc_life p {
+  color: #7f7f7f;
+  line-height: 19px;
+}
+/* 비즈니스센터>입주문의*/
+.bc_qna {
+  padding: 20px 0;
+}
+.bc_qna .qna_box {
+  border-radius: 10px;
+  height: 220px;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  background-image: url('/img/i_bc_qna.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 500px auto;
+  overflow: hidden;
+}
+.bc_qna .qna_box p.tit {
+  font-size: 24px;
+  color: #d11a6a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.bc_qna h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  margin-bottom: 15px;
+}
+.bc_qna h4 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+  display: inline-block;
+  background-color: #313131;
+  border-radius: 10px;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 30px;
+}
+.bc_qna p {
+  color: #7f7f7f;
+  line-height: 19px;
+}
+/* DTC소개>건물소개 */
+.building {
+  padding-bottom: 20px;
+}
+.building h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  margin-bottom: 15px;
+}
+.building .img {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.building .img img {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+}
+.building .info {
+  margin-bottom: 30px;
+}
+.building .info li {
+  border-bottom: 1px dotted #b4b4b4;
+  font-size: 13px;
+  color: #7f7f7f;
+  padding: 7px;
+  position: relative;
+}
+.building .info li strong {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #313131;
+  padding: 6px 0;
+  width: 70px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.building .info li span {
+  display: inline-block;
+  margin-left: 80px;
+  padding: 7px 0;
+}
+.building .info li:first-child {
+  border-top: 1px dotted #b4b4b4;
+}
+.building .tbl_type_1 {
+  min-width: 480px;
+}
+/* 비즈니스센터>비즈니스센터 소개 */
+.bc_intro {
+  padding-bottom: 20px;
+}
+.bc_intro h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  margin-bottom: 15px;
+}
+.bc_intro .img {
+  text-align: center;
+}
+.bc_intro .img img {
+  width: 100%;
+  height: auto;
+}
+.bc_intro .img .img_01 {
+  max-width: 604px;
+}
+.bc_intro .movein_info_2 {
+  width: 100%;
+  display: inline-block;
+}
+.bc_intro .movein_info_2 > li {
+  width: 100%;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  float: left;
+  margin-bottom: 20px;
+}
+.bc_intro .movein_info_2 dl {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+.bc_intro .movein_info_2 dl dt {
+  margin: 0 0 0 40px;
+  color: #292a2f;
+  font-size: 17px;
+}
+.bc_intro .movein_info_2 dl dd.num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 13px 0 0 19px;
+  background: url('/img/bg_movein_bt_box_tit.png') no-repeat;
+}
+.bc_intro .movein_info_2 dl dd.con {
+  margin: 10px 0 0 40px;
+  color: #7f7f7f;
+  font-size: 15px;
+}
+.bc_intro .movein_info_2 dl dd.con li {
+  margin-bottom: 5px;
+}
+.movein_tp {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .movein_tp_box {
+    border-top: 4px solid #d11a6a;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    background-repeat: no-repeat;
+    background-size: 90px auto;
+  }
+  .movein_tp_box dl {
+    width: 100%;
+    padding: 0 100px 15px 0;
+  }
+  .movein_tp_box dl dt {
+    width: 180px;
+    height: 40px;
+    background-color: #d11a6a;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: left;
+    padding-left: 7px;
+    margin-bottom: 10px;
+  }
+  .movein_tp_box dl dd.stit {
+    color: #292a2f;
+    font-size: 17px;
+    line-height: 21px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .movein_tp_box dl dd.con {
+    color: #7f7f7f;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 15px;
+  }
+  .box-1 {
+    background-image: url('/img/tp_box_01.png');
+    background-position: right top;
+  }
+  .box-2 {
+    background-image: url('/img/tp_box_02.png');
+    background-position: right top;
+  }
+  .box-3 {
+    background-image: url('/img/tp_box_03.png');
+    background-position: right bottom;
+  }
+}
+@media (max-width: 499px) {
+  .movein_tp_box {
+    border-top: 4px solid #d11a6a;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    background-image: none;
+  }
+  .movein_tp_box dl {
+    width: 100%;
+    padding: 0 15px 15px 0;
+  }
+  .movein_tp_box dl dt {
+    width: 180px;
+    height: 40px;
+    background-color: #d11a6a;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: left;
+    padding-left: 7px;
+    margin-bottom: 10px;
+  }
+  .movein_tp_box dl dd.stit {
+    color: #292a2f;
+    font-size: 17px;
+    line-height: 21px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .movein_tp_box dl dd.con {
+    color: #7f7f7f;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 15px;
+  }
+}
+.tl_gallery {
+  width: 100%;
+}
+.tl_gallery li {
+  float: left;
+  margin: 1%;
+}
+.tl_gallery li img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 600px) {
+  .tl_gallery li {
+    width: 23%;
+  }
+}
+@media (max-width: 599px) {
+  .tl_gallery li {
+    width: 48%;
+  }
+}
+.support_com {
+  width: 100%;
+}
+.support_com li {
+  width: 33%;
+  float: left;
+}
+.support_com li img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+/* 비전 및 목표 */
+.vision {
+  padding: 20px 0;
+}
+.vision h3 {
+  color: #d11a6a;
+  font-size: 30px;
+}
+.vision .infog {
+  padding: 20px 0 20px 0;
+  text-align: center;
+  width: 100%;
+}
+.vision .infog img {
+  width: 100%;
+  height: auto;
+}
+.vision .infog p {
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999;
+}
+.vision .infog-1 img {
+  max-width: 934px;
+}
+.vision .infog-2 img {
+  max-width: 1021px;
+}
+.vision .infog-3 img {
+  max-width: 787px;
+}
+@media (max-width: 599px) {
+  .vision h3 {
+    font-size: 18px;
+  }
+}
+/* CI소개 */
+.ci {
+  width: 100%;
+  padding: 20px 0;
+}
+.ci h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.ci h3.eng {
+  font-family: 'Oswald';
+  font-weight: 400;
+  text-align: center;
+}
+.ci .concept {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.ci .concept .ci_img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ci .concept .ci_img img {
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: 0 0 1px #e6e6e6;
+  padding: 20px;
+}
+.ci .concept .ci_exp {
+  text-align: center;
+}
+.ci .concept .ci_exp .tit {
+  color: #313131;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.ci .concept .ci_exp .txt {
+  color: #7f7f7f;
+  line-height: 21px;
+  font-size: 15px;
+}
+.ci_w {
+  width: 100%;
+  display: inline-block;
+}
+.ci_w .ci_o {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ci_w .ci_o img {
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: 0 0 1px #e6e6e6;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+.ci_w .ci_o .ci_img_01 {
+  max-width: 326px;
+}
+.ci_w .ci_o .ci_img_02 {
+  max-width: 413px;
+}
+.ci_w .ci_o .ci_img_03 {
+  max-width: 424px;
+}
+.ci_w .ci_o .ci_img_04 {
+  max-width: 286px;
+}
+.ci_w .ci_o .ci_img_05 {
+  max-width: 459px;
+}
+.ci_w .ci_o .ci_img_06 {
+  max-width: 466px;
+}
+.ci_w .ci_o .ci_img_07 {
+  max-width: 450px;
+}
+.ci_w .ci_o .ci_img_08 {
+  max-width: 464px;
+}
+/* 대관안내 */
+.rent_guide {
+  text-align: center;
+  width: 100%;
+}
+.rent_guide h3 {
+  font-size: 24px;
+  color: #d11a6a;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.rent_guide .tbl_type_1 {
+  min-width: 500px;
+}
+.rent_guide p {
+  line-height: 21px;
+  text-align: left;
+}
+.rent_guide .img {
+  text-align: center;
+}
+.rent_guide .img img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+.rent_guide .rent_li li {
+  color: #7f7f7f;
+  margin-bottom: 5px;
+  line-height: 21px;
+  padding-left: 100px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  text-align: left;
+}
+.rent_guide .rent_li li strong {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #313131;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.rent_guide dl {
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
+}
+.rent_guide dl dt {
+  width: 100px;
+  height: 100px;
+  background: url('/img/bg_rent_qna.png') no-repeat;
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  padding-top: 15px;
+  float: left;
+  margin-right: 20px;
+}
+.rent_guide dl dd.team {
+  float: left;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #292a2f;
+}
+.rent_guide dl dd.tel {
+  float: left;
+  padding-top: 10px;
+  font-size: 15px;
+  color: #025e6e;
+  font-size: 30px;
+  font-family: 'Oswald';
+  font-weight: 700;
+}
+.r_list > li {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+.rent_w {
+  padding: 15px 20px 15px 20px;
+  text-align: left;
+}
+.rent_w .ttl {
+  width: 100%;
+}
+.rent_w .ttl a {
+  color: #000000;
+  font-size: 19px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+.rent_w .con {
+  color: #888888;
+  font-size: 14px;
+  line-height: 20px;
+}
+.rent_w .con span.writer {
+  float: left;
+  margin-right: 20px;
+}
+.rent_w .con span.date {
+  float: left;
+}
+.rent_w .con span.file {
+  float: right;
 }
