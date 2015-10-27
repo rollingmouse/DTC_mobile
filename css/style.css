@@ -653,6 +653,9 @@ ul.dot_line > li {
   line-height: 19px;
   background-size: 4px 1px;
 }
+.MD_in {
+  min-height: 700px;
+}
 /* 공지사항 > 검색 */
 .srh_w {
   width: 100%;
@@ -2544,4 +2547,219 @@ select {
 }
 .rent_w .con span.file {
   float: right;
+}
+/* 전시 및 행사일정 */
+.event > ul > li {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.event_w {
+  width: 100%;
+}
+.event_w .thumb {
+  float: left;
+  margin-right: 20px;
+}
+.event_w .thumb img {
+  width: 200px;
+  height: auto;
+}
+.event_w .con {
+  float: left;
+}
+.event_w .con .ttl {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.event_w .con .ttl a {
+  color: #000000;
+  font-size: 19px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+.event_w .con .ttl span.ing {
+  display: inline-block;
+  background-color: #d11a6a;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  width: 60px;
+  border-radius: 3px;
+  line-height: 27px;
+}
+.event_w .con .ttl span.end {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  width: 60px;
+  border-radius: 3px;
+  line-height: 27px;
+}
+.event_w .con ul > li {
+  color: #7f7f7f;
+  margin-bottom: 5px;
+  line-height: 21px;
+  padding-left: 100px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  text-align: left;
+}
+.event_w .con ul > li strong {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #44a5ce;
+  color: #ffffff;
+  border-radius: 5px;
+}
+@media (max-width: 799px) {
+  .event_w {
+    width: 100%;
+  }
+  .event_w .thumb {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .event_w .thumb img {
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+  }
+  .event_w .con {
+    width: 100%;
+  }
+  .event_w .con .ttl {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .event_w .con .ttl a {
+    color: #000000;
+    font-size: 19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+  }
+  .event_w .con .ttl span.ing {
+    display: inline-block;
+    background-color: #d11a6a;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    width: 60px;
+    border-radius: 3px;
+    line-height: 27px;
+  }
+  .event_w .con .ttl span.end {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    width: 60px;
+    border-radius: 3px;
+    line-height: 27px;
+  }
+  .event_w .con ul > li {
+    color: #7f7f7f;
+    margin-bottom: 5px;
+    line-height: 21px;
+    padding-left: 100px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    text-align: left;
+  }
+  .event_w .con ul > li strong {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #44a5ce;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+}
+.event_view {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+}
+.event_view ul {
+  width: 100%;
+  border-top: 3px solid #313131;
+}
+.event_view ul li {
+  border-bottom: 1px solid #dddddd;
+}
+.event_view ul li.tit {
+  color: #000000;
+  font-size: 19px;
+  text-align: center;
+  padding: 15px 0;
+}
+.event_view ul li.tit span.ing {
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #d11a6a;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+.event_view ul li.tit span.end {
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+.event_view ul li.con {
+  color: #7f7f7f;
+  font-size: 15px;
+  padding: 10px 0;
+}
+.event_view ul li.con strong {
+  margin: 0 20px;
+  display: inline-block;
+  background-color: #44a5ce;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  width: 100px;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+.event_view .dimg {
+  text-align: center;
+}
+.event_view .dimg img {
+  width: 100%;
+  height: auto;
+  max-width: 770px;
 }
