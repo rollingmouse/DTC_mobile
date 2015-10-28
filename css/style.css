@@ -13,9 +13,6 @@
 .bgyellow {
   background-color: #ed9226;
 }
-.bgmint {
-  background-color: #029c92;
-}
 .bglg {
   background-color: #f4f4f4;
 }
@@ -27,6 +24,9 @@
 }
 .bgblue {
   background-color: #44a5ce;
+}
+.bgmint {
+  background-color: #029c92;
 }
 .bgBtn-1 {
   background-color: #444;
@@ -3030,4 +3030,138 @@ ul.main_building a:hover .detail {
     line-height: 24px;
     padding: 10px 0 0 10px;
   }
+}
+/* 설정 */
+.setting {
+  border-bottom: 1px solid #dddddd;
+  height: 60px;
+  margin-top: 20px;
+  /*Checkbox Specific styles*/
+  /*Toggle Specific styles*/
+}
+.setting .ttl {
+  color: #7f7f7f;
+  font-size: 24px;
+  float: left;
+  margin-left: 20px;
+  line-height: 60px;
+}
+.setting input {
+  float: right;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.setting input[type='checkbox'] {
+  display: none;
+  cursor: pointer;
+}
+.setting input[type='checkbox']:focus,
+.setting input[type='checkbox']:active {
+  outline: none;
+}
+.setting input[type='checkbox'] + label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  color: #d11a6a;
+}
+.setting input[type='checkbox'] + label:before,
+.setting input[type='checkbox'] + label:after {
+  content: '';
+  font-family: helvetica;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+}
+.setting input[type='checkbox'] + label:before {
+  background-color: #b9b9b9;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.setting input[type='checkbox'] + label:after {
+  color: #ffffff;
+}
+.setting input[type='checkbox']:checked + label:before {
+  -moz-box-shadow: inset 0 0 0 10px #158EC6;
+  -webkit-box-shadow: inset 0 0 0 10px #158EC6;
+  box-shadow: inset 0 0 0 10px #158EC6;
+}
+.setting input[type='checkbox'] + label:before {
+  border-radius: 3px;
+}
+.setting input[type='checkbox'] + label:hover:after,
+.setting input[type='checkbox']:checked + label:after {
+  content: "\2713";
+  line-height: 18px;
+  font-size: 14px;
+}
+.setting input[type='checkbox'] + label:hover:after {
+  color: #ffffff;
+}
+.setting input[type='checkbox']:checked + label:after,
+.setting input[type='checkbox']:checked + label:hover:after {
+  color: #ffffff;
+}
+.setting input[type='checkbox'].toggle {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 55px;
+  height: 28px;
+  background-color: #b9b9b9;
+  position: relative;
+  border-radius: 30px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.setting input[type='checkbox'].toggle:hover:after {
+  background-color: #ffffff;
+}
+.setting input[type='checkbox'].toggle:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.setting input[type='checkbox']:checked.toggle {
+  -moz-box-shadow: inset 0 0 0 15px #158EC6;
+  -webkit-box-shadow: inset 0 0 0 15px #158EC6;
+  box-shadow: inset 0 0 0 15px #158EC6;
+}
+.setting input[type='checkbox']:checked.toggle:after {
+  left: 29px;
+  background-color: #ffffff;
+}
+.ico_setting {
+  width: 40px;
+  height: 40px;
+  background-image: url('/img/setting.png');
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999;
+  float: right;
+  display: inline-block;
+  margin: 20px 20px 0 0;
 }
