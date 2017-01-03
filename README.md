@@ -1,8 +1,7 @@
 # e-독서친구 2017.01.03
 
 ##[수정내용]
-13. <span class="ico_refer">를 <span class="ico_refer2">로 수정
-<span class="ico_refer2>문제를 푸는 도중 뒤로 가기를 누르거나 창을 닫으면 인증에 실패하게 되니 주의하기 바랍니다.</span>
+13. span class="ico_refer"를 span class="ico_refer2"로 수정
 
 25. web editor으로 작성된 부분은 style 별도 지정하지 않음. 글 작성시 글 간격 조정해야함.
 
