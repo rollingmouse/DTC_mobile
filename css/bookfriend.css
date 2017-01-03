@@ -10,6 +10,7 @@
   position: absolute;
   left: 20px;
   top: 10px;
+  background-color: #e74445;
 }
 .book_view_w .auth_result ul li:nth-child(odd) span {
   background-color: #e74445;
@@ -18,7 +19,7 @@
   background-color: #ff9500;
 }
 
-를 아래처럼 
+를 아래처럼 수정 (2군데 있음)
 
 .book_view_w .auth_result ul li span {
   width: 30px;
@@ -32,4 +33,5 @@
   position: absolute;
   left: 20px;
   top: 10px;
+  background-color: #e74445;
 }
