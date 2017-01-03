@@ -1,4 +1,4 @@
-# e-독서친구 [2017.01.03]
+# e-독서친구 [2017.01.04]
 
 ##[수정내용]
 1. `13번` span class='ico_refer'를 span class='ico_refer2'로 수정
