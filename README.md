@@ -5,6 +5,6 @@
 2. `25번` web editor으로 작성된 부분은 style 별도 지정하지 않음. 글 작성시 글 간격 조정해야함.
 3. `36번` bookfriend.less   bookfriend.css 수정
 4. `36번` 수정필요 - 주관식은 input을 div class='subjective'로 감싸고 있어야 함
-5. `40번` style.less   style.css
+5. `40번` style.less   style.css   수정
 6. `47번` /images/sub/img_level.jpg 
 
