@@ -1,0 +1,35 @@
+.book_view_w .auth_result ul li span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  color: #ffffff;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.book_view_w .auth_result ul li:nth-child(odd) span {
+  background-color: #e74445;
+}
+.book_view_w .auth_result ul li:nth-child(even) span {
+  background-color: #ff9500;
+}
+
+를 아래처럼 
+
+.book_view_w .auth_result ul li span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  color: #ffffff;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
