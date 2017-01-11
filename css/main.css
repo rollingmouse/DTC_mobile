@@ -1,0 +1,99 @@
+/* 바로가기 */
+.main_dgo {
+  width: 480px;
+  height: 200px;
+  border: 1px solid #e1e1e1;
+  float: left;
+}
+.main_dgo ul {
+  width: 100%;
+  clear: both;
+}
+.main_dgo ul:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  display: block;
+  *zoom: 1;
+}
+.main_dgo ul li {
+  font-size: 17px;
+  color: #535353;
+  line-height: 1.3em;
+}
+.main_dgo ul li a {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.main_dgo ul li i {
+  background-image: url('/images/main/main_dgo.png');
+  background-repeat: no-repeat;
+}
+.main_dgo ul li strong {
+  color: #ff9500;
+}
+.main_dgo ul li:first-child {
+  float: left;
+  width: 249px;
+  height: 200px;
+  border-right: 1px solid #e1e1e1;
+  text-align: center;
+}
+.main_dgo ul li:first-child a {
+  height: 200px;
+  text-align: center;
+}
+.main_dgo ul li:first-child a i {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-position: 0 0;
+  margin: 20px auto 10px auto;
+}
+.main_dgo ul li:first-child a span {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  clear: both;
+}
+.main_dgo ul li:nth-child(2) {
+  float: left;
+  width: 229px;
+  height: 100px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.main_dgo ul li:nth-child(2) a {
+  height: 100px;
+}
+.main_dgo ul li:nth-child(2) a i {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-position: 0 -150px;
+  float: right;
+  margin: 20px 30px 0 0;
+  position: relative;
+}
+.main_dgo ul li:nth-child(2) a span {
+  margin: 40px 0 0 30px;
+  display: inline-block;
+  position: relative;
+}
+.main_dgo ul li:last-child {
+  float: left;
+  width: 229px;
+  height: 100px;
+}
+.main_dgo ul li:last-child a {
+  width: 229px;
+  height: 98px;
+  background-image: url('/images/main/btn_reading.png');
+  background-repeat: no-repeat;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999;
+}
