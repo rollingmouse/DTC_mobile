@@ -1,5 +1,11 @@
 # e-독서친구
 
+####[2017.01.12] 추가/수정내용
+1. main.html 수정 - 독서교육종합지원시스템 
+2. main.less   main.css 
+3. 이미지 추가 /images/main/btn_reading.png
+
+
 ####[2017.01.04] 추가/수정내용
 1. `13번` span class='ico_refer'를 span class='ico_refer2'로 수정
 2. `25번` web editor으로 작성된 부분은 style 별도 지정하지 않음. 글 작성시 글 간격 조정해야함.
