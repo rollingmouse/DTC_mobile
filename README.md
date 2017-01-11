@@ -3,8 +3,7 @@
 ####[2017.01.12] 추가/수정내용
 1. main.html 수정 - 독서교육종합지원시스템 
 2. main.less   main.css 수정
-3. 이미지 추가 /images/main/btn_reading.png
-
+3. 이미지 추가 /images/main/btn_reading.png - 메일발송
 
 ####[2017.01.04] 추가/수정내용
 1. `13번` span class='ico_refer'를 span class='ico_refer2'로 수정
