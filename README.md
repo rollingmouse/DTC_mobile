@@ -2,7 +2,7 @@
 
 ####[2017.01.12] 추가/수정내용
 1. main.html 수정 - 독서교육종합지원시스템 
-2. main.less   main.css 
+2. main.less   main.css 수정
 3. 이미지 추가 /images/main/btn_reading.png
 
 
