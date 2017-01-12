@@ -1,0 +1,21 @@
+.gnbNav .sub_wrap .sub_inner .submenu > li > ul > li > a {
+  width: 100%;
+  clear: both;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  padding-left: 10px;
+  background-color: #f5f5f5;
+  display: block;
+}
+.gnbNav .sub_wrap .sub_inner .submenu > li > ul > li > a.gnb_mypage {
+  background-color: #ffe8ce !important;
+  background-image: url('/images/gnb_mypage.png');
+  background-repeat: no-repeat;
+  padding-left: 45px;
+}
+.gnbNav .sub_wrap .sub_inner .submenu > li > ul > li > ul {
+  width: 100%;
+  clear: both;
+  padding: 11px 15px 12px;
+}
