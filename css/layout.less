@@ -1,0 +1,24 @@
+.sub_wrap{.poA;left:-260px;top:80px;-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-ms-transition:all 0.4s;transition:all 0.4s;
+    .sub_inner{.w1100;.poR;.bg-white;.bdrA;border-bottom:3px solid @navy;
+        .submenu{.w100p;.bg-white;
+            &:after{.after;}
+            &>li{.fL;width:156px;.bdrR;
+                &:last-child{.bdrn;width:162px;}
+                h3{.w100p;.bg-blue;height:40px;.lh40;.taC;.f16;color:@white;}
+                &>ul{.w100p;min-height:480px;
+                    &>li{.w100p;
+                        &>a{.w100p;height:34px;.lh34;.f13;.pL10;.bg-f5;.dpblock;
+                            &.gnb_mypage{background-color:#ffe8ce !important;.bgi(url('/images/gnb_mypage.png'));padding-left:45px;}
+                        }
+                        &>ul{.w100p;padding:11px 15px 12px;
+                            &>li{.lh14em;
+                                a{.f12;color:@gray-55;.bgi(url('/images/bu_gnb.gif'));.bgpo(0,7px);padding-left:7px;}
+                            }
+                        }
+                    }
+                }
+                &:first-child>ul>li:last-child{.bdrn;}
+            }
+        }
+    }
+}
