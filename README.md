@@ -4,6 +4,8 @@
 1. 상단메뉴 마이페이지에 style추가 layout.less   layout.css 수정
 2. 상단메뉴 마이페이지에 style추가 /images/gnb_mypage.png 추가(이메일 발송)
 3. 상단메뉴 마이페이지에 style추가 main.html 상단메뉴영역에 반영
+4. 독후감쓰기안내-초등학생우수독후감선정-심사 기준 페이지 수정 style.less  style.css 
+5. 독후감쓰기안내-초등학생우수독후감선정-심사 기준 페이지 수정 bookreport1_2_01.html 
 
 ####[2017.01.12] 추가/수정내용
 1. main.html 수정 - 독서교육종합지원시스템 
