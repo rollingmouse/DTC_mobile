@@ -3,7 +3,7 @@
 ####[2017.01.13] 추가/수정내용
 1. 상단메뉴 마이페이지에 style추가 layout.less   layout.css 수정
 2. 상단메뉴 마이페이지에 style추가 /images/gnb_mypage.png 추가(이메일 발송)
-3. 상단메뉴 마이페이지에 style추가 <li><a href="#none" class="gnb_mypage">마이페이지</a></li>
+3. 상단메뉴 마이페이지에 style추가 main.html 상단메뉴영역에 반영
 
 ####[2017.01.12] 추가/수정내용
 1. main.html 수정 - 독서교육종합지원시스템 
