@@ -35,3 +35,20 @@
   top: 10px;
   background-color: #e74445;
 }
+
+마지막 부분에 추가
+
+/* 추가 2017.01 */
+.bookfriend_con .tab-wrapper {
+  position: relative;
+}
+.bookfriend_con .tab-wrapper .btn_booklist {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.bookfriend_con .tab-wrapper .btn_booklist i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
