@@ -1,5 +1,9 @@
 # e-독서친구
 
+####[2017.01.18] 추가/수정내용
+1. bookfriend.less    bookfriend.css 수정 -도서목록 다운로드 
+2. board.less    board.css 수정 -게시판 웹에디터 영역 기본 line-height
+
 ####[2017.01.13] 추가/수정내용
 1. 상단메뉴 마이페이지에 style추가 layout.less   layout.css 수정
 2. 상단메뉴 마이페이지에 style추가 /images/gnb_mypage.png 추가(이메일 발송)
