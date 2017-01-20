@@ -1,5 +1,9 @@
 # e-독서친구
 
+####[2017.01.20] 추가/수정내용
+1. 이달의 고전 페이지에 질문지 추가 - bookfriend.less / bookfriend.css / 이달의고전.html
+
+
 ####[2017.01.18] 추가/수정내용
 1. bookfriend.less    bookfriend.css 수정 -도서목록 다운로드 
 2. board.less    board.css 수정 -게시판 웹에디터 영역 기본 line-height
