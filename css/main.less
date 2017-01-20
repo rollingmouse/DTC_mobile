@@ -24,3 +24,19 @@
         }
     }
 }
+
+마지막 부분에 추가
+
+/* 관리팝업(새창) */
+.modalWindow{.poF;width:400px;height:340px;.bg-white;top:150px;left:50%;margin-left:-200px;.z1000;border:3px solid @blue;padding:30px 40px;
+    .modalWrapper{.taL;.w100p;.lh15em;.f15;color:@gray-55;
+        p{.mB15;}
+        b{color:@red;.nbgB;}
+        .popBtnArea{.w100p;.taC;.mB15;.bdrT;.pT15;}
+    }
+    .today_w{.w100p;height:40px;.lh40;.bg-white;color:@gray-55;.f12;.pR10;.taR;
+        .not_today{.fL;}
+        .adminPop_x{width:15px;height:15px;.bgih(url('/images/main/adminPop_x.gif'));.dpinblock;.mL20;}
+    }
+}
+.modal.overlay{.poF;top:0;left:0;width:100%;min-height:100%;background:rgba(0, 0, 0, 0.7);z-index:997;}
