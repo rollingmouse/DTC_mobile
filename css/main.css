@@ -97,3 +97,77 @@
   overflow: hidden;
   text-indent: -999;
 }
+
+마지막 부분에 추가
+
+/* 관리팝업(새창) */
+.modalWindow {
+  position: fixed;
+  width: 400px;
+  height: 340px;
+  background-color: #ffffff;
+  top: 150px;
+  left: 50%;
+  margin-left: -200px;
+  z-index: 1000;
+  border: 3px solid #288fce;
+  padding: 30px 40px;
+}
+.modalWindow .modalWrapper {
+  text-align: left;
+  width: 100%;
+  clear: both;
+  line-height: 1.5em;
+  font-size: 15px;
+  color: #555555;
+}
+.modalWindow .modalWrapper p {
+  margin-bottom: 15px;
+}
+.modalWindow .modalWrapper b {
+  color: #e74445;
+  font-family: 'nbgB';
+}
+.modalWindow .modalWrapper .popBtnArea {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  margin-bottom: 15px;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 15px;
+}
+.modalWindow .today_w {
+  width: 100%;
+  clear: both;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #555555;
+  font-size: 12px;
+  padding-right: 10px;
+  text-align: right;
+}
+.modalWindow .today_w .not_today {
+  float: left;
+}
+.modalWindow .today_w .adminPop_x {
+  width: 15px;
+  height: 15px;
+  background-image: url('/images/main/adminPop_x.gif');
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999;
+  display: inline-block;
+  margin-left: 20px;
+}
+.modal.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 997;
+}
