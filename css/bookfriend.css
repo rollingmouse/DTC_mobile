@@ -52,3 +52,36 @@
   vertical-align: middle;
   margin-right: 5px;
 }
+
+
+이달의 고전을 아래처럼 수정
+
+/* 이달의 고전 */
+.classic_lists .con .con_txt {
+  width: 100%;
+  clear: both;
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.4em;
+  text-align: left;
+}
+.classic_lists .con .con_txt .con_Q {
+  width: 100%;
+  clear: both;
+  font-size: 13px;
+  margin-top: 15px;
+  position: relative;
+  padding: 8px 0 0 75px;
+  min-height: 30px;
+}
+.classic_lists .con .con_txt .con_Q span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  padding: 0 15px;
+  line-height: 30px;
+  background-color: #e74445;
+  color: #ffffff;
+  border-radius: 5px;
+}
