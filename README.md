@@ -1,5 +1,8 @@
 # e-독서친구
 
+####[2017.02.05] 추가/수정내용
+1. 레이어팝업창 추가 - layout.less / layout.css / main.html
+
 ####[2017.01.20] 추가/수정내용
 1. 이달의 고전 페이지에 질문지 추가 - bookfriend.less / bookfriend.css / 이달의고전.html
 2. 메인페이지 레이어팝업창 추가 - main.less / main.css / main.html
