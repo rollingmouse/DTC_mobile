@@ -1,5 +1,8 @@
 # e-독서친구
 
+####[2017.02.13] 추가/수정내용
+1. 관리자 레이어팝업창 추가 - layout.less / layout.css / main.html
+
 ####[2017.02.05] 추가/수정내용
 1. 레이어팝업창 추가 - layout.less / layout.css / main.html
 
