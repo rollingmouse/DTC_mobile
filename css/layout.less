@@ -1,40 +1,8 @@
-.sub_wrap{.poA;left:-260px;top:80px;-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-ms-transition:all 0.4s;transition:all 0.4s;
-    .sub_inner{.w1100;.poR;.bg-white;.bdrA;border-bottom:3px solid @navy;
-        .submenu{.w100p;.bg-white;
-            &:after{.after;}
-            &>li{.fL;width:156px;.bdrR;
-                &:last-child{.bdrn;width:162px;}
-                h3{.w100p;.bg-blue;height:40px;.lh40;.taC;.f16;color:@white;}
-                &>ul{.w100p;min-height:480px;
-                    &>li{.w100p;
-                        &>a{.w100p;height:34px;.lh34;.f13;.pL10;.bg-f5;.dpblock;
-                            &.gnb_mypage{background-color:#ffe8ce !important;.bgi(url('/images/gnb_mypage.png'));padding-left:45px;}
-                        }
-                        &>ul{.w100p;padding:11px 15px 12px;
-                            &>li{.lh14em;
-                                a{.f12;color:@gray-55;.bgi(url('/images/bu_gnb.gif'));.bgpo(0,7px);padding-left:7px;}
-                            }
-                        }
-                    }
-                }
-                &:first-child>ul>li:last-child{.bdrn;}
-            }
-        }
-    }
-}
-
-
-
-/* 관리팝업(새창) */
-.modalWindow{.poF;width:400px;height:340px;.bg-white;top:150px;left:50%;margin-left:-200px;.z1000;border:3px solid @blue;padding:30px 40px;
-    .modalWrapper{.taL;.w100p;.lh15em;.f15;color:@gray-55;
-        p{.mB15;}
-        b{color:@red;.nbgB;}
-        .popBtnArea{.w100p;.taC;.mB15;.bdrT;.pT15;}
-    }
-    .today_w{.w100p;height:40px;.lh40;.bg-white;color:@gray-55;.f12;.pR10;.taR;
-        .not_today{.fL;}
-        .adminPop_x{width:15px;height:15px;.bgih(url('/images/main/adminPop_x.gif'));.dpinblock;.mL20;}
-    }
-}
-.modal.overlay{.poF;top:0;left:0;width:100%;min-height:100%;background:rgba(0, 0, 0, 0.7);z-index:997;}
+/* common */
+*, *:before, *:after{.border-box;}
+html{overflow-y:scroll;}
+body{.poR;-webkit-print-color-adjust:exact;}
+.wrap_bookFriend{.w100p;min-width:1100px;}
+.HD{.w100p;.taC;.bdrB;}
+.MD{.w100p;.taC;.mB50;}
+.FT{.w100p;height:80px;.m0auto;.bdrT;}
