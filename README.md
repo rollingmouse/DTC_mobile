@@ -1,5 +1,8 @@
 # e-독서친구
 
+####[2017.03.02] 추가/수정내용
+1. 인증서 팝업창 수정 - layout.less / layout.css / bookFriend.less / bookFriend.css / 인증서팝업창.html
+
 ####[2017.02.13] 추가/수정내용
 1. 관리자 레이어팝업창 추가 - layout.less / layout.css / main.html
 
