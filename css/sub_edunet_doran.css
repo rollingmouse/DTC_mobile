@@ -1,0 +1,566 @@
+
+/*메인*/
+
+.sub_title.doran_title { padding:12px 0 8px 0;}
+
+#sub_list section { margin-bottom:20px;}
+
+#sub_list dl.notice_wrap { display: inline-block; width: 360px; overflow:hidden;}
+#sub_list dl.notice_wrap dt { font-size: 18px; line-height: 18px; font-weight: 600; color: #333; padding-bottom: 15px; }
+#sub_list dl.notice_wrap li { padding: 6px 0; border-bottom: 1px solid #ccc; height: 24px; position: relative; cursor: pointer; }
+#sub_list dl.notice_wrap li a { display: inline-block; zoom: 1; max-width: 250px; float: none; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 24px; height: 24px; font-size: 13px; color: #666; font-weight: 600; }
+#sub_list dl.notice_wrap li:hover a { text-decoration: underline; }
+#sub_list dl.notice_wrap li img { display: inline-block; *display:inline;*zoom:1;vertical-align: top; margin: 5px 0 0 5px; }
+#sub_list dl.notice_wrap li .date { font-weight: normal; font-size: 12px; color: #8d8d8d; text-align: right; position: absolute; right: 0; top: 12px; }
+#sub_list dl.notice_wrap dd .more_list { position: absolute; right: 0; top: 0; }
+
+#sub_list .doran_mv_wrap { display: inline-block; width: 360px; height: 218px; float: right; overflow: hidden;  position:relative;}
+#sub_list .doran_mv_wrap .doran_mv { width:358px; height:216px; border: 1px solid #ddd; overflow: hidden; background-color:#fafafa; }
+#sub_list .doran_mv_wrap .doran_mv img { width:360px !important; height:218px !important;}
+#sub_list .doran_mv_wrap .control_wrap { width:100%; height:30px; background-color:rgba(0,0,0,0.3); position:absolute; bottom:0; z-index:9; padding:0 10px;}
+#sub_list .doran_mv_wrap .control_wrap .doran_mv_paper { display:inline-block; float:left; margin-top:10px;}
+#sub_list .doran_mv_wrap .control_wrap .doran_mv_paper a { display:inline-block; width:12px; height:12px; background:url('../images/dorandoran/doran_paper.png') no-repeat; text-indent:-9999px; margin-right:4px;}
+#sub_list .doran_mv_wrap .control_wrap .doran_mv_paper a.activeSlide { width:30px; height:12px; background:url('../images/dorandoran/doran_paper.png') no-repeat; background-position:-12px 0;}
+#sub_list .doran_mv_wrap .control_wrap .doran_mv_control { display:inline-block; float:right; margin:10px 20px 0 0;}
+#sub_list .doran_mv_wrap .control_wrap .doran_mv_play { display:inline-block; width:12px; height:12px; background:url('../images/dorandoran/doran_control.png') no-repeat; text-indent:-9999px; }
+#sub_list .doran_mv_wrap .control_wrap .doran_mv_stop { display:inline-block; width:12px; height:12px; background:url('../images/dorandoran/doran_control.png') no-repeat; text-indent:-9999px; background-position:-12px 0; }
+
+#sub_list dl.board_wrap { display: inline-block; width: 360px; height:206px; overflow:hidden;}
+#sub_list dl.board_wrap dt { font-size: 18px; line-height: 34px; font-weight: 600; color: #fff; background-color:#ff9b33; padding-left:10px; }
+#sub_list dl.board_wrap li { padding: 6px 0 0 118px; border-bottom: 1px dashed #ccc; height: 50px; position: relative; cursor: pointer; }
+#sub_list dl.board_wrap li:last-child { border-bottom-style: solid; height: 50px; position: relative; cursor: pointer; }
+#sub_list dl.board_wrap li .organ { width:100px; height:30px; padding:0 4px; line-height:30px;  border:1px solid #ddd; font-weight: normal; font-size: 12px; color: #ff9b33; text-align: center; position: absolute; left: 0; top: 12px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+#sub_list dl.board_wrap li a { display: inline-block; zoom: 1; max-width: 240px; float: none; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 28px; height: 28px; font-size: 13px; color: #666; font-weight: 600; }
+#sub_list dl.board_wrap li:hover a { text-decoration: underline; }
+#sub_list dl.board_wrap li img { display: inline-block; *display:inline;*zoom:1;vertical-align: top; margin: 5px 0 0 5px; }
+#sub_list dl.board_wrap li .date { font-weight: normal; font-size: 12px; color: #8d8d8d; text-align: right; position: absolute; left: 118px; top: 30px; }
+#sub_list dl.board_wrap dd .more_list { position: absolute; right: 2px; top: 8px; }
+
+#sub_list .doran_tv_wrap { display: inline-block; width: 360px; height: 206px; float: right; overflow: hidden;  position:relative; }
+#sub_list .doran_tv_wrap .title { font-size: 18px; line-height: 18px; font-weight: 600; color: #333; margin-top:8px; padding-bottom: 5px; }
+#sub_list .doran_tv_wrap .title .more_list { position: absolute; right: 2px; top: 8px; }
+#sub_list .doran_tv_wrap ul { border:1px solid #ddd; padding:14px;}
+#sub_list .doran_tv_wrap ul li { width: 160px; display:inline-block; margin-right:6px; }
+#sub_list .doran_tv_wrap ul li:last-child { margin-right:0; float:right;}
+#sub_list .doran_tv_wrap ul li a.list_img { display:inline-block; width:160px; height:120px; overflow:hidden; border:none; position:relative;}
+#sub_list .doran_tv_wrap ul li a.list_img img { width:160px; display:inline;  }
+#sub_list .doran_tv_wrap ul li a.list_img .btn_play {position:absolute; top:80px; left:116px; width:38px; height:38px;}
+#sub_list .doran_tv_wrap ul li a.list_title { display:block; max-width:160px; margin-top:4px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;  }
+
+
+#sub_list .doran_help_wrap { display: inline-block; width: 360px; height: 155px; float: left; overflow: hidden;  position:relative; background:url(../images/dorandoran/doran_help.png) 0 0 no-repeat; }
+#sub_list .doran_help_wrap .btn_school { display:inline-block; width:57px; height:57px; position:absolute; left:13px; top:57px; text-indent:-9999px; }
+#sub_list .doran_help_wrap .btn_wee { display:inline-block; width:57px; height:57px; position:absolute; left:80px; top:57px; text-indent:-9999px; }
+#sub_list a.btn_organ_search { width:175px; height:155px; overflow:hidden; display:inline-block; margin-left:28px;}
+#sub_list .bannerzone { display: inline-block; width: 173px; height: 153px; float: right; overflow: hidden;  position:relative; border:1px solid #ddd;background-color:#fff;}
+.banner_navi {width:175px; height:20px; text-align: center; position: relative; top:-30px; background-color:rgba(0,0,0,0.3); }
+.banner_navi a {vertical-align: middle; display: inline-block; -ms-zoom: 1; position:absolute; left:26px; top:2px;}
+.banner_navi a.next {left:130px; }
+.banner_number { width:80px; padding-top: 6px; display:inline-block;-ms-zoom: 1;}
+.banner_number li {float:left; margin: 0px 2px; line-height: 9px; vertical-align: middle; display: inline-block; -ms-zoom: 1;}
+
+
+/*서브 공통*/
+
+.tabscontents { display:none; padding-top:20px;}
+
+.txtWrap01.m0{ padding-top:0;}
+.txtWrap01 .sub_txt{ font-size:14px; color:#999; line-height:24px; }
+.infograpic {width:100%; position:relative; padding-bottom:20px; clear:both; font-size:12px;}
+.infograpic dd, .infograpic li { font-size:12px; line-height:18px; color:#828484}
+.infograpic .mh20 {hieght:20px;}
+.infograpic .b20 {margin-bottom:20px;}
+.infograpic .center { text-align:center; margin:0 auto;}
+.infograpic .b40 {margin-bottom:40px;}
+.infograpic .b60 {margin-bottom:60px;}
+.infograpic .b80 {margin-bottom:80px;}
+.infograpic .mt20 {margin-top:20px;}
+.infograpic .mt100 {margin-top:100px;}
+.infograpic .sub_txt {display:inline-block; font-size:13px; line-height:20px; color:#000; }
+.infograpic .dot_txt {display:block; font-size:13px; line-height:20px; margin-bottom:20px; color:#000; background:url(../images/dorandoran/title_dot.png) 0 0 no-repeat; padding-left:20px;}
+.infograpic .dot_txt.strong {font-size:14px; font-weight:600; color:#00b1a6;}
+
+/*알림마당- 정책안내*/
+.policy_title  { width:100%; margin-top:20px; }
+.policy_title li {display:inline-block; float:left; height:20px; line-height:20px; font-size:14px; font-weight:600; background:url(../images/dorandoran/title_dot.png) 0 0 no-repeat; padding-left:20px;}
+.policy_title li:first-child { width:320px;}
+.tabs.doran_policy li a span.web_display_span{display: inline-block;}
+.tabs.doran_policy a span.mobile_display_span{display: none;}
+.tabs.doran_policy { margin-top:10px;}
+.tabs.doran_policy .m1, .tabs.doran_policy .m1 a { width: 340px; font-size:13px;}
+.tabs.doran_policy .m2, .tabs.doran_policy .m2 a { width: 204px; font-size:13px;}
+.tabs.doran_policy .m3, .tabs.doran_policy .m3 a { width: 204px; font-size:13px;}
+.btn_dn { background: #03a3f3; padding: 0px 30px; height: 40px; color: #fff; line-height: 40px; display: inline-block; -ms-zoom: 1; float:right; margin-top:30px; }
+
+.infograpic .txt_r {float:right; color:#ccc;}
+.infograpic_btn {width:100%; text-align:right; }
+.infograpic_btn.st2 {width:100%; text-align:right; border-top:none; float:right; margin:20px 0; padding-top:20px;}
+.infograpic_btn .btn_css {background-color:#ff9b33; padding:10px 20px; position:relative; font-size:14px; text-decoration:none; color:#fff; border: solid 0px #999; width:auto;font-weight:600;display: inline-block; margin:0 4px; cursor:pointer;}
+.infograpic .item {min-height:100px; font-size:13px; overflow:hidden;margin:0 0 40px 0}
+.infograpic .item .balloon {border:1px #ffd254 solid;font-size:15px;padding:18px 18px 18px 70px;margin:20px 0 0 0;background:url(../images/dorandoran/bullying/icon_balloon.gif) no-repeat 10px 14px #f8f7e8}
+.infograpic .item .title { padding: 0px 0px 17px;}
+.infograpic .item .mh100 { min-height:100px; overflow:hidden;}
+.infograpic .leftimg {width:230px; min-height:160px; float:left}
+.infograpic ul li {margin:0 0 0 0;padding:0 0 10px 0;list-style:none}
+.infograpic ul.doran_ex li {width:370px;}
+.infograpic ul li strong {display:inline-block;*display:inline;zoom:1;width:100px;vertical-align:top;font-weight:normal;font-size:15px}
+.infograpic ul li span {display:inline-block;*display:inline;zoom:1;width:410px;vertical-align:top}
+
+.infograpic .st1 {padding-left:189px; position:relative; margin-top:40px;}
+.infograpic .st1.sch1 {padding-left:203px; min-height:93px;}
+.infograpic .st1 dd.thum {position:absolute; left:0; top:0;}
+.infograpic .st1 dd {display:inline-block;}
+.infograpic .st1 dd p.title {padding: 30px 0px 10px; font-size: 15px; font-weight: bold;}
+.infograpic .st1 dd p.title2 {padding: 10px 0px 10px; font-size: 15px; font-weight: bold;}
+.infograpic .st1 dd p.title_p {padding: 10px 0px; font-size: 17px; color:#000; letter-spacing:-1px;}
+.infograpic .st1 dd p.title_p30 {padding: 30px 0px 10px; font-size: 17px; color:#000; letter-spacing:-1px;}
+.infograpic .st1 dd p.p10 {padding: 10px 0px 0px;}
+.infograpic dl dd.pre3 {padding-left: 157px; }
+.infograpic dl dd.pre3 p {font-size:15px;}
+.infograpic .st1 dd p.box {margin: 20px 0px; padding: 15px 20px; background-color: rgb(162, 218, 254); color:#000;}
+.infograpic .strong {color:#000;}
+.infograpic .st1 dd.d22 {line-height:22px;}
+
+.infograpic .sch2 .bg01 { background: url("../images/dorandoran/school2/img1.gif") no-repeat; line-height: 24px; padding-left: 200px;}
+.infograpic .sch2 .bg02 { background: url("../images/dorandoran/school2/img2.gif") no-repeat right; text-align: right; line-height: 24px; padding-right: 200px;}
+.infograpic .ta_r { text-align: right; }
+
+.infograpic .pa1 { background: url("../images/dorandoran/parent1/img1.gif") no-repeat; margin-top: 40px; padding: 0px 0px 0px 200px; overflow: hidden; min-height: 100px; }
+.infograpic .pa2 { background: url("../images/dorandoran/parent1/img3_1.gif") no-repeat 0px 20px; margin: 40px 0px 0px; padding: 0px 0px 0px 200px; overflow: hidden; min-height: 100px;}
+.infograpic .pa3 { background: url("../images/dorandoran/parent1/img2.gif") no-repeat; margin: 80px 0px 0px; padding: 0px 0px 0px 200px; overflow: hidden; min-height: 100px;}
+.infograpic .pa4 { background: url("../images/dorandoran/parent1/img4.gif") no-repeat; margin: 80px 0px 0px; padding: 0px 0px 0px 200px; overflow: hidden; min-height: 100px;}
+.infograpic .pa5 { background: url("../images/dorandoran/school2/img1.gif") no-repeat; padding-left: 200px; line-height:24px;}
+.infograpic .pa6 { background: url("../images/dorandoran/school2/img2.gif") no-repeat right; height: 300px; text-align: right; padding-right: 200px; line-height:24px;}
+
+.infograpic .pa2 .div01 { line-height: 22px; vertical-align: top; display: inline-block; -ms-zoom: 1; }
+.infograpic .pa2 .div01 .p01 { padding: 0px 0px 10px;}
+.infograpic .pa2 .div01 .p02 { 0px 0px 0px 5px}
+.infograpic .pa2  strong { adding: 10px 0px 5px; font-size: 15px; font-weight: bold; display: inline-block; -ms-zoom: 1;}
+.infograpic .pa2 .div02 { background: url("../images/dorandoran/parent1/img3_2.gif") no-repeat 0px -20px; line-height: 22px; vertical-align: top; display: inline-block; -ms-zoom: 1;float:right; width:360px; margin-left:-80px; }
+.infograpic .pa2 .div02 .p01 { padding: 0 0 10px 130px; }
+.infograpic .pa2 .div02 .p02 { padding: 0px 0px 0px 130px; }
+.infograpic .pa3 dd, .infograpic .pa4 dd { line-height:22px;}
+
+.infograpic .mh_200 {min-height:200px; overflow:hidden; margin-top:20px;}
+.infograpic .t3_pa1 { background: url("../images/dorandoran/parent3/img1.gif") no-repeat; padding: 0px; width: 48%; overflow: hidden; float: left; min-height: 200px; }
+.infograpic .t3_pa2 { background: url("../images/dorandoran/parent3/img2.gif") no-repeat; padding: 0px; width: 48%; overflow: hidden; float: right; min-height: 200px; }
+.infograpic .t3_pa3 { background: url("../images/dorandoran/parent3/img3.gif") no-repeat; margin: 60px 0px 0px; padding: 0px 0px 0px 160px; overflow: hidden; min-height: 100px; }
+.infograpic .t3_pa1 dt, .infograpic .t3_pa2 dt { padding-left: 157px;}
+.infograpic .t3_table { margin: 0px; padding-top: 60px;}
+.infograpic .t3_table table .n1 th { padding: 20px; font-size: 15px; font-weight: normal; background-color: rgb(102, 204, 255);}
+.infograpic .t3_table table .n1 td { padding: 20px 30px; font-size: 13px; background-color: rgb(229, 246, 254);}
+.infograpic .t3_table table .n2 th { padding: 20px; font-size: 15px; font-weight: normal; background-color: rgb(255, 204, 102);}
+.infograpic .t3_table table .n2 td { padding: 20px 30px; font-size: 13px; background-color: rgb(255, 245, 223);}
+.infograpic .t3_table table .n3 th { padding: 20px; font-size: 15px; font-weight: normal; background-color: rgb(153, 204, 0);}
+.infograpic .t3_table table .n3 td { padding: 20px 30px; font-size: 13px; background-color: rgb(246, 255, 216);}
+.infograpic .t3_pa3 dd { line-height: 22px;}
+
+.infograpic .cTab {margin: 0 0 20px 0;padding: 0;list-style: none;min-height:20px;overflow:hidden}
+.infograpic .cTab li {float: left;margin: 0 0 0 0; padding:0 ;width:249px;}
+.infograpic .cTab li a {display:block;text-align:center;font-size:14px;line-height:40px;border: 1px #9fa0a0 solid; border-right:none;}
+.infograpic .cTab li:last-child {border-right: 1px #9fa0a0 solid;}
+.infograpic .cTab li.on {background-color: #00b1a6}
+.infograpic .cTab li.on a{color:#FFFFFF;border: 1px #00b1a6 solid; }
+
+.infograpic .cTab2 {margin: 0 0 20px 0;padding: 0;list-style: none;min-height:20px;overflow:hidden}
+.infograpic .cTab2 li {float: left;margin: 0 0 0 0; border-right: 1px #ddd solid; padding:0 24.5px; text-align:center;}
+.infograpic .cTab2 li a { width:100%; display:block;text-align:center;font-size:13px;line-height:20px; }
+.infograpic .cTab2 li:last-child {border-right: none;}
+.infograpic .cTab2 li.on { color:#00b1a6}
+.infograpic .cTab2 li.on a{ border-bottom: 1px #00b1a6 solid; color:#00b1a6; font-weight:600;}
+
+.infograpic .cTab3 {margin: 0 0 20px 0;padding: 0;list-style: none;min-height:20px;overflow:hidden}
+.infograpic .cTab3 li {float: left;margin: 0 0 0 0; padding:0 ;width:50%;}
+.infograpic .cTab3 li a {display:block;text-align:center;font-size:14px;line-height:40px;border: 1px #9fa0a0 solid;}
+.infograpic .cTab3 li.on {background-color: #00b1a6}
+.infograpic .cTab3 li.on a{color:#FFFFFF;border: 1px #00b1a6 solid; }
+
+.attention_div { background: url("../images/dorandoran/school3/img6.gif") no-repeat; margin: 20px 0px 0px; padding: 0px 0px 0px 60px;}
+.attention_div dt { padding-top: 24px}
+.attention_div dd { width:510px;height: 260px; line-height: 22px;}
+.attention_div2 { background: url("../images/dorandoran/school4/img7.gif") no-repeat; margin: 40px 0px 0px; padding: 0px 0px 0px 60px; height: 240px;}
+.attention_div2 dt { margin: 0px 0px 8px; padding-top: 16px;}
+.attention_div2 dd { line-height: 20px; height:400px;}
+
+/* 진단해보세요 2018-02 수정 */
+.check_content{width:100%;position:relative;clear:both;}
+.doran_check_title{width:100%;background-color:#178dae;margin-bottom:10px;padding:22px 70px 20px 50px;color:white;font-size:16px;font-weight:bold;position:relative;line-height:1.5em;}
+.doran_check_title i{width:23px;height:30px;background:url('/nedu/images/dorandoran/ico_dorancheck.png') no-repeat;display:inline-block;vertical-align:middle;position:absolute;left:20px;top:20px;}
+.doran_check_title .btn_dorancheck{width:30px;height:30px;background-image:url('/nedu/images/dorandoran/btn_dorancheck.png');background-repeat:no-repeat;background-position:0 0;position:absolute;right:20px;top:20px;}
+.doran_check_title .btn_dorancheck.opened{background-position:0 -30px;}
+
+.doran_checkWrap {display:none;position:relative;clear:both;}
+.doran_checkWrap.opened{display:block;}
+.doran_checkWrap dl{padding:0 0 0 0;border-bottom:1px #d1d1d1 solid;min-height:10px;overflow:hidden;}
+.doran_checkWrap dt{margin:0 0 0 0;padding-left:20px;list-style:none;clear:both;}
+.doran_checkWrap dt div{float:left;padding:12px 0;position:relative;}
+.doran_checkWrap dd{clear:both;margin:0 0 0 0;padding:0 0 0 0;background-color:#ffcc99;border-top:1px #d1d1d1 solid;}
+.doran_checkWrap dd.answer{padding:14px 20px 12px 40px;line-height:12px;min-height:20px;display:none;font-size:14px;line-height:1.4em;color:#333;}
+.doran_checkWrap div.question{font-size:14px;line-height:1.4em;}
+.doran_checkWrap div.btn1{width:20%;}
+.doran_checkWrap div.btn2{width:24%;}
+.doran_checkWrap input{width:15px;height:15px;border:1px #d1d1d1 solid;margin-right:5px;vertical-align:middle;background-color:red;visibility:hidden;position:absolute;left:0;top:0;}
+.doran_checkWrap span{background-color:#FFFFFF;border:1px #999 solid;text-indent:-9999px;display:inline-block;*display:inline;zoom:1;width:15px;height:15px;vertical-align:middle;margin-right:7px;}
+.doran_checkWrap label{font-size:14px;line-height:1.4em;}
+@media (min-width:600px){
+  .doran_checkWrap .question{width:56%;}
+  .doran_checkWrap div.btn1{width:20%;padding-left:10px;}
+  .doran_checkWrap div.btn2{width:24%;}
+
+}
+@media (max-width:599px){
+  .doran_checkWrap .question{width:100%;}
+  .doran_checkWrap div.btn1{width:50%;}
+  .doran_checkWrap div.btn2{width:50%;}
+
+}
+
+
+.doran_ex { display:inline-block;}
+.doran_ex li { list-style: none; margin: 0px 10px 0px 0px; padding: 0px; float: left;}
+.doran_ex li img {vertical-align:top;}
+.fsbox { margin: 60px 0px 0px; padding: 18px 0px 18px 70px; border: 1px solid rgb(255, 210, 84); font-size: 14px; border-image: none;}
+
+/*이용안내*/
+.manual_wrap .dot_txt { display:block; font-size:14px; line-height:20px; margin-bottom:20px; color:#000; background:url(../images/dorandoran/title_dot.png) 0 0 no-repeat; padding-left:20px;}
+.manual_wrap .dot_txt strong { font-size:14px; font-weight:600; color:#00b1a6;}
+.manual_wrap .dot_txt.strong {font-size:14px; font-weight:600; color:#00b1a6;}
+.manual_wrap ol { margin-bottom:20px;}
+.manual_wrap ol li { padding-bottom:10px; border-bottom:1px dashed #ccc; }
+.manual_wrap ol li:last-child { border-bottom:none;}
+.manual_wrap ol li span.img {display:block; width:100%; overflow:hidden;}
+.manual_wrap ol li span.txt { display:block; font-size:13px; line-height:16px; padding:0 0 10px 55px;}
+.manual_wrap ol li span.txt .red { display:block; padding:4px 0 0 20px; font-size:12px; color:red;}
+
+.manual_wrap ol li span.txt .number { display:inline-block; width:16px; height:16px; background:url(../images/dorandoran/ico_num.png) no-repeat; font-size:12px; color:#fff; text-align:center; line-height:16px; margin-right:4px; padding-left:1px;}
+
+
+
+
+
+/*상담실 개인동의팝업*/
+.layerPop.doran_agree {height:600px;}
+.personDataAgreeForm {padding:20px 45px;}
+.personDataAgreeForm .st1 {font-weight:400;}
+.personDataAgreeForm .b600 {font-weight:600; padding-left:0px;}
+.personDataAgreeForm p {padding:10px 0; font-weight:600;}
+.personDataAgreeForm p span {font-weight:400; padding-left:15px;}
+.personDataAgreeForm p span.st3 {padding-left:0px;}
+.personDataAgreeForm p span.st4 {padding-left:23px;}
+.personDataAgreeForm .agree_check {background-color:#eef0f0; height:20px; padding:10px; margin-top:10px;}
+.personDataAgreeForm .agree_check input{ display:inline-block; *display:inline; *zoom:1; width:18px; border:1px solid #c9d1d5; height:18px; vertical-align:middle; color:#606262; font-weight:600; margin-right:10px; }
+.personDataAgreeForm .agree_check .st2 {color:#c12b16;}
+.personDataAgreeForm .agree_btn { text-align:center; margin-top:20px; }
+.personDataAgreeForm .agree_btn a{ margin-left:10px; display:inline-block; }
+.personDataAgreeForm .agree_btn .txtbtn{ height:38px; background:url(../images/bg_bbsbtn.gif) no-repeat right 0; padding:0 14px 0 0; }
+.personDataAgreeForm .agree_btn .txtbtn img{ background:url(../images/bg_bbsbtn.gif) no-repeat left 0; height:20px; padding:9px 12px 9px 16px; float:left; margin-left:-2px;}
+.personDataAgreeForm .agree_btn .txtbtn span{ font-size:14px; font-weight:600; color:#333; display:inline-block; *display:inline; *zoom:1; padding-top:10px; }
+
+/*안테나*/
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: 0 0 0 0; position: relative; zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease; background-color:#afd344;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+.carousel li {margin-right: 5px}
+/* Direction Nav */
+.flex-direction-nav {height:104px;width:54px; background-color:#afd344;right:0;position:absolute;top:0}
+.flex-direction-nav a {width: 24px; height: 24px; margin: 0 0 0 0; display: block; position: absolute;z-index: 10; cursor: pointer; text-indent: -9999px;  -webkit-transition: all .3s ease;top:40px}
+.flex-direction-nav .flex-next { background: url(../images/dorandoran/guide/btn_next.gif) no-repeat; right:4px; }
+.flex-direction-nav .flex-prev {right: 30px; background: url(../images/dorandoran/guide/btn_prev.gif) no-repeat}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+/* Control Nav */
+.flex-control-nav {position: absolute; bottom: 30px; text-align: center;right:0;z-index:20;display:none}
+.flex-control-nav li {margin: 0 0 0 10px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 10px; height: 10px; display: block; background: #b3d7f9;cursor: pointer; text-indent: -9999px;}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #027ceb; cursor: default; }
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+.helpWrap {margin:30px 18px 10px 18px;padding:0 0 0 0}
+.helpWrap dt {margin:0 0 0 0;padding:0 0 0 0}
+.helpWrap dd {list-style:none;margin:0 0 0 0;padding:0 0 0 0}
+.helpWrap .map {width:530px;height:372px;background-color:#CCCCCC;float:left}
+.helpWrap .map iframe {width:530px;height:372px;}
+.helpWrap .titleicon .title {font-size:24px;line-height:24px;font-weight:normal;padding:0 20px 0 20px;color:#333333}
+.helpWrap .address {padding:10px 0 15px 20px;color:#666666}
+.helpWrap .fright {float:left;margin:0 0 30px 20px;width:260px;line-height:22px}
+.helpWrap .phonewrap {margin:0 0 0 20px !important;}
+.helpWrap .phone {color:#3399ff;padding:0 0 0 10px}
+.helpWrap .homepage {color:#3399ff;padding:0 0 0 10px}
+.helpWrap .homepage a {color:#3399ff;}
+.helpWrap .homepage a:hover {text-decoration:underline}
+.helpWrap .usetime {color:#999999}
+.helpWrap .info {color:#999999}
+.helpWrap .etc {color:#999999}
+#showhelp .close {position:absolute;right:15px;bottom:20px;text-align:right}
+#showhelp .close a {display:inline-block;*display:inline;zoom:1;background-color:#b9d9ff;line-height:30px;padding:0 20px;text-align:center}
+.search2 {width:743px;margin:0 auto 0 auto;font-size:14px;color:#000000;padding:5px 0;text-align:right}
+.search2 input {width:70px;border:3px #ff8400 solid;font-size:14px;text-align:center;line-height:22px;height:22px;vertical-align:middle;margin-left:10px}
+.search2 label {line-height:22px;height:22px;vertical-align:middle;display:inline-block;*display:inline;zoom:1;background:url(../images/dorandoran/guide/icon_arrow.gif) no-repeat 10px 3px;font-size:0;width:24px }
+.search1 {height:130px}
+.search1 ul {margin:0;padding:0}
+.search1 ul li {margin:0;padding:0;list-style:none;float:left}
+.btnReload {display:inline-block;*display:inline;zoom:1;background:url(../images/dorandoran/guide/btn_reload.gif) no-repeat;width:112px;height:28px;line-height:28px;color:#FFFFFF;margin:0 4px 0 10px;text-align:center}
+.btnReload span{padding:0 0 0 16px;color:#fff;}
+.nt30{margin-top: 0px !important;}
+
+/*상담실*/
+.counsel_infobox {width:100%; margin-top:30px;padding-top:10px; clear:both; border: 1px dashed #ccc;}
+.counsel_infobox p {padding:0 0 4px 10px;;}
+.counsel_info {line-height: 24px; display:inline-block; vertical-align:top; margin-left:6px;}
+.counsel_bg1 { height: 167px; background-color: rgb(71, 209, 238);}
+.counsel_bg1 .title { width: 340px; height: 167px; line-height: 36px; font-size: 30px; float: left; background-color: rgb(71, 209, 238); }
+.counsel_bg1 .title .txt { margin: 30px 0px 0px 45px; color: rgb(51, 51, 51); display: block;}
+.counsel_bg2 { background: url("../images/dorandoran/counsel_image.gif") no-repeat; width: 743px; height: 422px; position: relative;}
+.counsel_bg2 .bg2_box { left: 308px; top: 60px; width: 200px; position: absolute;}
+.counsel_bg2 .bg2_box.d3 { left: 10px; top: 260px; }
+.counsel_bg2 .bg2_box.d4 { left: 258px; top: 260px;}
+.counsel_bg2 .bg2_box.d5 { left: 504px; top: 260px; }
+.counsel_bg2 .bg2_box .txt01 {color: rgb(0, 153, 204); font-size: 18px; font-weight: bold;}
+.counsel_bg2 .bg2_box .txt02 {line-height: 21px;}
+.counsel_bg2 .bg2_box .txt03 {font-size: 14px; font-weight: bold;}
+.counsel_bg2 .bg2_box .txt04 {padding: 60px 0px 0px; line-height: 21px;}
+.counsel_bg2 .bg2_box .txt05 {line-height: 20px; font-size: 18px; font-weight: bold;}
+.sresult {border-width: 0px 3px 3px; border-style: none solid solid; border-color: currentColor rgb(1, 161, 195) rgb(1, 161, 195); top: 62px; width: 285px; height: 200px; overflow: auto; margin-top: -1px; display: none; position: absolute; z-index: 100; -ms-overflow-x: hidden; background-color: rgb(255, 255, 255);}
+.sresult .rnone {margin: 20px 0px 0px; text-align: center; color: orange; font-size: 12px; display: none;}
+.search_find_box { float: left; position: relative;}
+.search_find_box .inputbox {border:#01a1c3 3px solid;color:#5f5f5f;padding-top: 4px;padding-bottom: 4px;padding-left:10px;font-size:14px; }
+.search_find_box .btnClose { border-top: 1px #c3c3c3 solid; border-right: 1px #c3c3c3 solid; border-bottom: 1px #c3c3c3 solid; background-image: url('../img/btnClose_0.png'); width: 21px; height: 22px; cursor: pointer; margin-top: 0px; position: absolute; }
+.search_find_box .btnClose:hover { background-image: url('../img/btnClose_1.png'); }
+.search_find_box .see_more { float: left; height: 14px; size: 14px; border-top: 1px solid #ccc; text-align: center; background-color: #f4f4f4; padding-top: 4px; padding-bottom: 4px; cursor: pointer; width: 100%; }
+.search_find_box .more_options .see_more:hover { background-color: #F0FFFF; }
+.search_find_box .profile { border: #C3c3c3 1px solid; float: left; }
+.search_find_box .find_info { cursor: pointer; clear: both; /*		height:63px; */width: 100%; float: left; /* 추가한 부분 */ }
+.search_find_box .darkened { background-color: #eee; }
+.search_find_box .info_cont { border-top: #e4e4e4 1px solid; border-right: #e4e4e4 1px solid;/*	height:63px; */}
+.search_find_box .find_info img { width: 55px; height: 55px; padding: 3px; background-color: #FFFFFF; margin-right: 7px; }
+.search_find_box .user_id { padding-top: 3px; padding-bottom: 3px; overflow: hidden; height: 14px; }
+.search_find_box .user_name { padding-top: 3px; padding-bottom: 3px; overflow: hidden; height: 14px; font-weight: bold; }
+.search_find_box .nick_name { padding-top: 3px; padding-bottom: 3px; overflow: hidden; height: 14px; }
+.search_find_box .email_address { padding-top: 3px; padding-bottom: 3px; overflow: hidden; height: 14px; }
+.search_find_box .stuid { padding-top: 3px; padding-bottom: 3px; overflow: hidden; height: 14px; }
+.search_find_box_txt { float: left; position: relative; padding-top: 10px; color: rgb(51, 51, 51);}
+.div_list_title {width:99.8%; background:#f4f4f4; float:left; border-right:1px solid #ccc; }
+.inbox_href { color:#000;text-decoration:none;padding:5px 0 5px 10px}
+.local_search {height:20px; margin:10px 0; }
+.local_search li{ float:left; position:relative;  margin-left:3px; text-align:center; font-size:12px; }
+.local_search li a{ float:left; position:relative; width:36px; height:20px;  background:#ffffff; border:1px solid #eeeeee; color:#666; display:block; padding-top:2px;}
+.local_search li .on{ float:left; position:relative; width:44px; height:20px;  background:#ffc30f; border:1px solid #ff7e00; color:#FFF; padding-top:2px;}
+.local_search li a:hover{ float:left; position:relative; width:36px; height:20px;  background:#ffc30f; border:1px solid #ff7e00; color:#FFF; padding-top:2px;}
+.local_search li .on:hover{ width:44px;}
+.local_search li:first-child{ margin-left:0; }
+dl.trainning dd select{ float:left; width:110px; border:1px solid #c9d1d5; height:22px; font-weight:600; }
+dl.trainning dd select.width300 { width:300px; }
+dl.trainning dd select.width70 { width:70px; }
+.bbs_read p.b20 {margin:10px 0 8px 24px;}
+.doran_input {float:left; width:110px; border:1px solid #c9d1d5; height:22px; font-weight:600; margin:0 4px 12px 24px;}
+.doran_b20 {margin-bottom:20px;}
+
+
+/* 학교폭력 정적페이지 2018.02 */
+.clr05{clear:both;font-size:0;line-height:0;width:100%;height:5px;}
+.clr10{clear:both;font-size:0;line-height:0;width:100%;height:10px;}
+.clr15{clear:both;font-size:0;line-height:0;width:100%;height:15px;}
+.clr20{clear:both;font-size:0;line-height:0;width:100%;height:20px;}
+.clr30{clear:both;font-size:0;line-height:0;width:100%;height:30px;}
+.clr40{clear:both;font-size:0;line-height:0;width:100%;height:40px;}
+.clr50{clear:both;font-size:0;line-height:0;width:100%;height:50px;}
+
+.school-violence-wrap{width:100%;min-width:320px;max-width:748px;margin:30px auto;}
+.school-violence-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.school-violence-wrap *, .school-violence-wrap *::after, .school-violence-wrap *::before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.school-violence-wrap:after{content:"";height:0;line-height:0;clear:both;display:block;*zoom:1;}
+.school-violence-wrap h4{width:100%;font-size:24px;line-height:1.5em;margin-bottom:15px;font-weight:bold;color:#007cbd;}
+@media (max-width:748px){
+  .school-violence-wrap{padding:0 10px;}
+  .school-violence-wrap h4{font-size:18px !important;}
+}
+
+.school-violence-wrap .div-01{background-color:#edf4fc;width:100%;text-align:center;position:relative;overflow:hidden;}
+.school-violence-wrap .div-01:before{content:'';position:absolute;width:65px;height:60px;background-image:url('/nedu/images/dorandoran/ico_school.png');left:30px;bottom:-5px;z-index:1;}
+.school-violence-wrap .div-01 p{color:#178dae;line-height:1.5em;font-size:18px;font-weight:bold;padding:20px;}
+
+.school-violence-wrap .div-02{width:100%;}
+.school-violence-wrap .div-02 p{line-height:1.5em;font-size:14px;min-height:50px;padding:15px 20px 10px 55px;background-color:#3fa59f;color:white;display:inline-block;pading:15px;border-radius:5px;position:relative;}
+.school-violence-wrap .div-02 p i{width:25px;height:30px;display:inline-block;position:absolute;left:20px;top:10px;background-image:url('/nedu/images/dorandoran/ico_lawbook.png');}
+.school-violence-wrap .div-02-2{width:100%;}
+.school-violence-wrap .div-02-2 p{line-height:1.5em;font-size:14px;min-height:50px;padding:15px 20px 10px 55px;background-color:#666;color:white;display:inline-block;pading:15px;border-radius:5px;position:relative;float:right;}
+.school-violence-wrap .div-02-2 p i{width:25px;height:30px;display:inline-block;position:absolute;left:20px;top:10px;background-image:url('/nedu/images/dorandoran/ico_lawbook.png');}
+
+.school-violence-wrap .div-03{width:100%;position:relative;min-height:200px;text-align:center;}
+.school-violence-wrap .div-03 .thumb{width:250px;}
+.school-violence-wrap .div-03 ul{width:100%;text-align:left;}
+.school-violence-wrap .div-03 li{width:100%;position:relative;margin-bottom:10px;font-size:14px;line-height:1.5em;padding-left:105px;}
+.school-violence-wrap .div-03 li.nospan{padding-left:10px !important;}
+.school-violence-wrap .div-03 li:before{content:'';position: absolute;left:0;top:9px;width:4px;height:4px;border-radius:50%;background-color:#f68b33;}
+.school-violence-wrap .div-03 li span{position:absolute;left:10px;top:0;color:#000;font-weight:bold;width:95px;font-size:14px;letter-spacing:-1;}
+@media (min-width:600px){
+  .school-violence-wrap .div-03{padding:0 0 0 250px;}
+  .school-violence-wrap .div-03 .thumb{position:absolute;left:0;top:0;}
+}
+@media (max-width:599px){
+  .school-violence-wrap .div-03{padding:0 0 0 0;}
+  .school-violence-wrap .div-03 .thumb{margin:0 auto;}
+}
+
+.school-violence-wrap .div-04{background-color:#edf4fc;width:100%;text-align:center;position:relative;overflow:hidden;}
+.school-violence-wrap .div-04:before{content:'';position:absolute;width:65px;height:60px;background-image:url('/nedu/images/dorandoran/ico_school.png');left:30px;bottom:-5px;z-index:1;}
+.school-violence-wrap .div-04 p{color:#178dae;line-height:1.5em;font-size:18px;font-weight:bold;padding:20px;}
+
+.school-violence-wrap .div-05{background-color:#edf4fc;width:100%;text-align:center;position:relative;overflow:hidden;}
+.school-violence-wrap .div-05:before{content:'';position:absolute;width:65px;height:60px;background-image:url('/nedu/images/dorandoran/ico_school.png');left:20px;bottom:-5px;z-index:1;}
+.school-violence-wrap .div-05 p{color:#178dae;line-height:1.5em;font-size:14px;font-weight:bold;padding:20px 20px 20px 100px;text-align:left;}
+
+.school-violence-wrap .div-06{width:100%;position:relative;min-height:150px;text-align:center;}
+.school-violence-wrap .div-06 .thumb{width:200px;}
+.school-violence-wrap .div-06 dl{width:100%;text-align:left;}
+.school-violence-wrap .div-06 dl dt{width:100%;font-weight:bold;color:#000;font-size:18px;margin:10px 0;line-height:1.5em;}
+.school-violence-wrap .div-06 dl dt.h4{width:100%;font-size:24px;line-height:1.5em;margin-bottom:15px;font-weight:bold;color:#007cbd;}
+.school-violence-wrap .div-06 dl dd{width:100%;color:#666;line-height:1.5em;font-size:14px;margin-bottom:3px;}
+.school-violence-wrap .div-06 dl dd.bttn{text-align:right;margin:10px 0 0 0;}
+.school-violence-wrap .div-06 dl dd.bttn a{display:inline-block;background-color:#ff9b33;color:white;font-weight:bold;font-size:14px;padding:10px 15px;}
+.school-violence-wrap .div-06 dl dd.bttn a:hover{background-color:#de7e19;}
+.school-violence-wrap .div-06 dl dd.bttn a i.chat{width:14px;height:14px;background-image:url('/nedu/images/dorandoran/ico_chat.png');display:inline-block;vertical-align:middle;margin-left:5px;}
+.school-violence-wrap .div-06 dl dd.bttn a i.search{width:14px;height:14px;background-image:url('/nedu/images/dorandoran/ico_search.png');display:inline-block;vertical-align:middle;margin-left:5px;}
+.school-violence-wrap .div-06 dl dd.bttn a i.tel{width:14px;height:14px;background-image:url('/nedu/images/dorandoran/ico_tel.png');display:inline-block;vertical-align:middle;margin-left:5px;}
+.school-violence-wrap .div-06 dl dd strong{font-weight:bold;font-size:14px;color:#3fa59f;}
+@media (min-width:600px){
+  .school-violence-wrap .div-06{padding:0 0 0 210px;}
+  .school-violence-wrap .div-06 .thumb{position:absolute;left:0;top:0;}
+}
+@media (max-width:599px){
+  .school-violence-wrap .div-06{padding:0 0 0 0;}
+  .school-violence-wrap .div-06 .thumb{margin:0 auto;}
+}
+
+.school-violence-wrap .div-07{width:100%;position:relative;text-align:left;padding:20px 100px 10px 30px;border:1px solid #d1d1d1;min-height:90px;}
+.school-violence-wrap .div-07 p{width:100%;line-height:1.5em;font-size:15px;color:darken(white,60%);}
+.school-violence-wrap .div-07 p.first strong{font-weight:bold !important;color:#007cbd !important;font-size:15px !important;}
+.school-violence-wrap .div-07 p.nth2 strong{font-weight:bold !important;color:#3fa59f !important;font-size:15px !important;}
+.school-violence-wrap .div-07 a{position:absolute;right:-1px;top:-1px;background-color:#178dae;color:white;width:90px;height:90px;display:block;text-align:center;line-height:1.4em;padding-top:18px;}
+.school-violence-wrap .div-07 a:hover{background-color:#097391;}
+.school-violence-wrap .div-07 a span{display:block;margin:0 auto;font-size:14px;}
+.school-violence-wrap .div-07 a i{width:20px;height:14px;background:url('/nedu/images/dorandoran/arw_right.png') no-repeat;display:block;margin:8px auto;}
+
+.school-violence-wrap .div-08{width:100%;position:relative;min-height:150px;text-align:center;}
+.school-violence-wrap .div-08 dl{width:100%;text-align:left;}
+.school-violence-wrap .div-08 dl dt{width:100%;font-weight:bold;color:#000;font-size:18px;margin:10px 0;line-height:1.5em;}
+.school-violence-wrap .div-08 dl dt.h4{width:100%;font-size:24px;line-height:1.5em;margin-bottom:15px;font-weight:bold;color:#007cbd;}
+.school-violence-wrap .div-08 dl dd{width:100%;color:#666;line-height:1.5em;font-size:14px;margin-bottom:3px;}
+.school-violence-wrap .div-08 dl dd strong{font-weight:bold;font-size:14px;color:#3fa59f;}
+
+.school-violence-wrap .div-09{width:100%;position:relative;min-height:150px;text-align:center;}
+.school-violence-wrap .div-09 .thumb{width:200px;}
+.school-violence-wrap .div-09 dl{width:100%;text-align:left;}
+.school-violence-wrap .div-09 dl dt{width:100%;font-weight:bold;color:#000;font-size:18px;margin:10px 0;line-height:1.5em;}
+.school-violence-wrap .div-09 dl dt.h4{width:100%;font-size:24px;line-height:1.5em;margin-bottom:15px;font-weight:bold;color:#007cbd;}
+.school-violence-wrap .div-09 dl dd{width:100%;color:#666;line-height:1.5em;font-size:14px;margin-bottom:3px;}
+.school-violence-wrap .div-09 dl dd strong{font-weight:bold;font-size:14px;color:#3fa59f;}
+@media (min-width:600px){
+  .school-violence-wrap .div-09{padding:0 210px 0 0;}
+  .school-violence-wrap .div-09 .thumb{position:absolute;right:0;top:0;}
+}
+@media (max-width:599px){
+  .school-violence-wrap .div-09{padding:0 0 0 0;}
+  .school-violence-wrap .div-09 .thumb{margin:0 auto;}
+}
+
+.school-violence-wrap .div-10{width:100%;position:relative;min-height:150px;text-align:left;background-color:#f1f1f1;padding:30px;}
+.school-violence-wrap .div-10 h5{display:inline-block;font-size:20px;color:white;font-weight:bold;background-color:#007cbd;padding:8px 25px;border-radius:10px;margin-bottom:15px;}
+.school-violence-wrap .div-10 h5.h5-2{background-color:#3fa59f;}
+.school-violence-wrap .div-10 h5 i{width:18px;height:14px;display:inline-block;margin-left:10px;vertical-align:middle;background-image:url('/nedu/images/dorandoran/ico_check.png');}
+.school-violence-wrap .div-10 ul{width:100%;}
+.school-violence-wrap .div-10 ul li{width:100%;position:relative;padding:0 0 10px 30px;line-height:24px;color:#555;font-size:14px;}
+.school-violence-wrap .div-10 ul li span{width:24px;height:24px;background-color:#007cbd;border-radius:50%;position:absolute;left:0;top:0;text-align:center;color:white;font-size:13px;font-weight:bold;line-height:24px;}
+.school-violence-wrap .div-10 ul.ul-2 span{background-color:#3fa59f;}
+
+.school-violence-wrap .div-11{width:100%;position:relative;text-align:left;padding:20px;border:1px solid #d1d1d1;min-height:90px;}
+.school-violence-wrap .div-11 p{width:100%;line-height:1.5em;font-size:14px;color:darken(white,60%);margin:2px 0;}
+
+.school-violence-wrap .div-12{width:100%;position:relative;text-align:left;border:1px solid #d1d1d1;}
+.school-violence-wrap .div-12:after{content:"";height:0;line-height:0;clear:both;display:block;*zoom:1;}
+.school-violence-wrap .div-12 .con{width:50%;float:left;padding:20px;}
+.school-violence-wrap .div-12 .con.L{border-right:1px solid #d1d1d1;}
+.school-violence-wrap .div-12 .con.R{border-left:1px solid #d1d1d1;margin-left:-1px;}
+.school-violence-wrap .div-12 h6 {width:100%;text-align:left;border-bottom:1px solid #d1d1d1;font-size:16px;font-weight:bold;padding:10px 0 20px 80px;background-position:0 0;background-repeat:no-repeat;}
+.school-violence-wrap .div-12 .con.L h6{color:#007cbd;background-image:url('/nedu/images/dorandoran/img_sv_02_9.gif');}
+.school-violence-wrap .div-12 .con.R h6{color:#3fa59f;background-image:url('/nedu/images/dorandoran/img_sv_02_10.gif');}
+.school-violence-wrap .div-12 dl{width:100%;text-align:left;margin-bottom:20px;}
+.school-violence-wrap .div-12 dl dt{width:100%;font-weight:bold;color:#000;font-size:16px;margin:10px 0;line-height:1.5em;}
+.school-violence-wrap .div-12 dl dt.h4{width:100%;font-size:24px;line-height:1.5em;margin-bottom:15px;font-weight:bold;color:#007cbd;}
+.school-violence-wrap .div-12 dl dd{width:100%;color:#666;line-height:1.5em;font-size:13px;margin-bottom:3px;position:relative;padding-left:8px;}
+.school-violence-wrap .div-12 dl dd:before{content:'';position: absolute;left:0;top:9px;width:3px;height:3px;border-radius:50%;background-color:#f68b33;}
+@media (min-width:600px){
+  .school-violence-wrap .div-12 .con{width:50%;}
+}
+@media (max-width:599px){
+  .school-violence-wrap .div-12 .con{width:100%;border:none;}
+  .school-violence-wrap .div-12 .con.L{border-bottom:1px solid #d1d1d1;}
+}
+
+.school-violence-wrap p.p-01{width:100%;color:darken(white,60%);line-height:1.5em;font-size:14px;}
+
+.quote-01{width:100%;border:2px solid #a5d0e9;border-radius:10px;padding:20px;position:relative;overflow:hidden;}
+.quote-01:before{content:'';position:absolute;width:70px;height:58px;background-image:url('/nedu/images/dorandoran/left-quote.png');left:15px;top:-10px;z-index:1;}
+.quote-01:after{content:'';position:absolute;width:70px;height:58px;background-image:url('/nedu/images/dorandoran/left-quote.png');right:15px;bottom:-10px;z-index:1;transform:rotate(-180deg);-webkit-transform:rotate(-180deg);}
+.quote-01 p{width:100%;font-size:16px;font-weight:bold;color:darken(white,70%);text-align:center;z-index:10;position:relative;}
+.quote-01 span{width:100%;display:block;text-align:right;font-size:13px;color:darken(white,60%);z-index:10;position:relative;}
+
+.quote-02{width:100%;background-color:#edf4fc;border-radius:10px;padding:20px;position:relative;text-align:center;}
+.quote-02 p{font-size:13px;display:inline-block;color:darken(white,80%);padding:0 0 0 28px;line-height:20px;min-height:20px;background-image:url('/nedu/images/dorandoran/ico_alert.png');background-repeat:no-repeat;text-align:left;}
+
+.school-violence-wrap .ul-01{width:100%;float:left;}
+.school-violence-wrap .ul-01:after{content:"";height:0;line-height:0;clear:both;display:block;*zoom:1;}
+.school-violence-wrap .ul-01 li{float:left;margin-bottom:10px;padding:0 10px;}
+.school-violence-wrap .ul-01 dl{width:100%;text-align:center;}
+.school-violence-wrap .ul-01 dl dd{width:100%;}
+.school-violence-wrap .ul-01 dl dd img{width:100%;max-width:250px;}
+.school-violence-wrap .ul-01 dl dt{width:100%;font-size:14px;color:darken(white,70%);text-align:center;line-height:1.4em;padding:10px;border:1px solid #d1d1d1 !important;border-radius:5px;}
+@media (min-width:500px){
+  .school-violence-wrap .ul-01 li{width:50%;}
+}
+@media (max-width:499px){
+  .school-violence-wrap .ul-01 li{width:100%;}
+}
